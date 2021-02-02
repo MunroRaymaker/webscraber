@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\src\\github\\webscraber\\webscraber.csproj": {}
+  },
+  "projects": {
+    "C:\\src\\github\\webscraber\\webscraber.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\github\\webscraber\\webscraber.csproj",
+        "projectName": "webscraber",
+        "projectPath": "C:\\src\\github\\webscraber\\webscraber.csproj",
+        "packagesPath": "C:\\Users\\jrn\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\github\\webscraber\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jrn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "http://tcas-nuget.ne.int/Nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://tcairlines.pkgs.visualstudio.com/_packaging/TCAS-Contracts/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.30, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
