@@ -14,7 +14,7 @@ namespace webscraber
             
             Console.ForegroundColor = ConsoleColor.Green;
             
-            string baseUrl = ReadLine.Read("Enter base url (hit enter for default):", "https://dk.sunclassairlines.dk");
+            string baseUrl = ReadLine.Read("Enter base url (hit enter for default):", "https://dk.sunclassairlines.dk").TrimEnd('/');
             string navClass = ReadLine.Read("Enter css class of nav element (hit enter for default):", "navbar navbar-default");
         
             if(!baseUrl.StartsWith("http"))
