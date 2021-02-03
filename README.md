@@ -2,7 +2,7 @@
 
 Simple console that uses [HtmlAgilityPack](https://html-agility-pack.net/) to parse links from a website, including subpages.
 
-### Prerequisites
+## Prerequisites
 
 There must be a <nav> element on the webpage with the menu, like so
 
@@ -21,4 +21,5 @@ dotnet run
 ```
 
 Enter address of website, eg. http://www.contoso.com.
-Enter css class of the nav element
+
+Enter css class of the nav element.
