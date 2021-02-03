@@ -11,9 +11,16 @@ namespace webscraber
         {
             Console.WriteLine("Web scraber");
             Console.WriteLine("Gets links with target blank and without rel=\"noopener noreferrer\"");
-
+            
             Console.ForegroundColor = ConsoleColor.Green;
-            var baseUrl = "https://dk.sunclassairlines.dk";
+            
+            string baseUrl = ReadLine.Read("Enter base url (hit enter for default):", "https://dk.sunclassairlines.dk");
+            string navClass = ReadLine.Read("Enter css class of nav element (hit enter for default):", "navbar navbar-default");
+        
+            if(!baseUrl.StartsWith("http"))
+            {
+                baseUrl = $"https://{baseUrl}";
+            }
 
             List<string> urls = new List<string>();
             urls.Add(baseUrl);
@@ -21,7 +28,7 @@ namespace webscraber
             // get pages
             var web = new HtmlWeb();
             HtmlDocument frontpage = web.Load(baseUrl);
-            var div = frontpage.DocumentNode.SelectSingleNode("//nav[@class=\"navbar navbar-default\"]");
+            var div = frontpage.DocumentNode.SelectSingleNode($"//nav[@class=\"{navClass}\"]");
             if (div != null)
             {
                 urls.AddRange(div.Descendants("a").Select(node => node.GetAttributeValue("href", string.Empty)).ToList());
